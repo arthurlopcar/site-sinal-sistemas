@@ -3,7 +3,7 @@
     <div class="mx-auto max-w-7xl px-5 sm:px-8">
       <div class="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
         <div data-reveal>
-          <SectionBadge texto="como funciona o processo" index="04" />
+          <SectionBadge texto="como funciona o processo" />
 
           <h2 class="mt-6 text-4xl sm:text-6xl font-extrabold leading-[0.95] tracking-[-0.04em] text-white">
             Passos simples do primeiro contato ao <span class="text-sinal-lime">atendimento 24h no ar</span>.

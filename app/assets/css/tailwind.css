@@ -40,10 +40,6 @@
     mask-image: linear-gradient(to bottom, black 40%, transparent 100%);
   }
 
-  .marquee-animation {
-    animation: marquee 25s linear infinite;
-  }
-
   [data-reveal] {
     opacity: 0;
     transform: translateY(24px);
@@ -56,15 +52,7 @@
   }
 }
 
-@keyframes marquee {
-  0% { transform: translateX(0%); }
-  100% { transform: translateX(-50%); }
-}
-
 @media (prefers-reduced-motion: reduce) {
-  .marquee-animation {
-    animation: none;
-  }
   [data-reveal] {
     opacity: 1;
     transform: none;

@@ -2,7 +2,7 @@
   <section id="portfolio" class="scroll-mt-24 border-b border-white/10 bg-sinal-navy py-20 sm:py-28">
     <div class="mx-auto max-w-7xl px-5 sm:px-8">
       <div data-reveal class="mb-14">
-        <SectionBadge texto="portfólio & projetos demonstrativos" index="03" />
+        <SectionBadge texto="portfólio & projetos demonstrativos" />
 
         <h2 class="mt-6 text-4xl sm:text-6xl font-extrabold leading-[0.95] tracking-[-0.04em] text-white max-w-4xl">
           Veja como pode ficar a <span class="text-sinal-lime">presença digital</span> do seu negócio.
@@ -15,7 +15,7 @@
 
       <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         <article
-          v-for="(projeto, index) in projetos"
+          v-for="projeto in projetos"
           :key="projeto.title"
           data-reveal
           class="group rounded-2xl border border-white/15 bg-sinal-ink overflow-hidden flex flex-col justify-between transition duration-300 hover:border-sinal-lime hover:shadow-[0_20px_50px_rgba(214,255,79,0.15)]"
@@ -28,9 +28,6 @@
                 :alt="projeto.title"
                 class="h-full w-full object-cover transition duration-500 group-hover:scale-105 group-hover:opacity-90"
               />
-              <div class="absolute top-4 left-4 rounded-md bg-sinal-ink/80 backdrop-blur px-3 py-1 font-mono text-xs font-bold uppercase tracking-wider text-sinal-lime border border-sinal-lime/30">
-                [ 0{{ index + 1 }} ]
-              </div>
               <div class="absolute bottom-4 left-4 rounded-md bg-sinal-lime px-3 py-1 font-mono text-xs font-bold uppercase tracking-wider text-sinal-ink">
                 {{ projeto.badge }}
               </div>

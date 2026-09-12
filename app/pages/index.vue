@@ -14,7 +14,7 @@
         </a>
 
         <!-- Desktop Navigation -->
-        <nav class="hidden items-center gap-5 font-mono text-xs font-bold uppercase tracking-[0.14em] text-sinal-muted xl:flex">
+        <nav class="hidden items-center gap-7 font-mono text-sm font-bold uppercase tracking-[0.16em] text-sinal-muted lg:flex">
           <a class="whitespace-nowrap transition hover:text-sinal-lime" href="#sobre" @click.prevent="scrollToSection('sobre')">A Sinal</a>
           <a class="whitespace-nowrap transition hover:text-sinal-lime" href="#solucoes" @click.prevent="scrollToSection('solucoes')">Soluções</a>
           <a class="whitespace-nowrap transition hover:text-sinal-lime" href="#portfolio" @click.prevent="scrollToSection('portfolio')">Portfólio</a>
@@ -23,18 +23,9 @@
           <a class="whitespace-nowrap transition hover:text-sinal-lime" href="#contato" @click.prevent="scrollToSection('contato')">Contato</a>
         </nav>
 
-        <a
-          :href="whatsappLink"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="hidden shrink-0 whitespace-nowrap rounded border-2 border-sinal-lime px-4 py-2.5 font-mono text-xs font-bold uppercase tracking-[0.12em] text-sinal-lime transition hover:bg-sinal-lime hover:text-sinal-ink xl:inline-flex"
-        >
-          WhatsApp ↗
-        </a>
-
         <!-- Mobile menu toggle -->
         <button
-          class="grid h-11 w-11 shrink-0 place-items-center rounded border border-white/20 text-white xl:hidden"
+          class="grid h-11 w-11 shrink-0 place-items-center rounded border border-white/20 text-white lg:hidden"
           :aria-expanded="isMobileMenuOpen"
           aria-label="Menu"
           @click="isMobileMenuOpen = !isMobileMenuOpen"
@@ -44,7 +35,7 @@
       </div>
 
       <!-- Mobile dropdown nav -->
-      <nav v-if="isMobileMenuOpen" class="border-t border-white/10 bg-sinal-ink px-5 py-6 xl:hidden font-mono text-sm font-bold uppercase tracking-wider space-y-3">
+      <nav v-if="isMobileMenuOpen" class="border-t border-white/10 bg-sinal-ink px-5 py-6 lg:hidden font-mono text-sm font-bold uppercase tracking-wider space-y-3">
         <a class="block rounded border border-white/10 px-4 py-3 text-sinal-muted hover:text-sinal-lime" href="#sobre" @click.prevent="scrollToSection('sobre')">A Sinal</a>
         <a class="block rounded border border-white/10 px-4 py-3 text-sinal-muted hover:text-sinal-lime" href="#solucoes" @click.prevent="scrollToSection('solucoes')">Soluções</a>
         <a class="block rounded border border-white/10 px-4 py-3 text-sinal-muted hover:text-sinal-lime" href="#portfolio" @click.prevent="scrollToSection('portfolio')">Portfólio</a>
@@ -56,14 +47,6 @@
     </header>
 
     <HeroSection :whatsapp-link="whatsappLink" />
-
-    <!-- Ticker / Marquee Banner -->
-    <div class="overflow-hidden border-b border-white/10 bg-sinal-lime py-4 text-sinal-ink">
-      <div class="marquee-animation flex min-w-max gap-12 whitespace-nowrap font-mono text-sm font-bold uppercase tracking-[0.2em]">
-        <span v-for="item in tickerItems" :key="item">{{ item }} ///</span>
-        <span v-for="item in tickerItems" :key="item + '-dup'">{{ item }} ///</span>
-      </div>
-    </div>
 
     <!-- Exact Section Order requested by founder -->
     <SobreSection :whatsapp-link="whatsappLink" />
@@ -87,16 +70,6 @@ import SobreSection from '~/components/sections/SobreSection.vue'
 
 const isMobileMenuOpen = ref(false)
 const whatsappLink = 'https://wa.me/5531996907206?text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20sobre%20as%20solu%C3%A7%C3%B5es%20da%20Sinal%20Sistemas.'
-
-const tickerItems = [
-  'Site Profissional Completo',
-  'Agente de IA 24/7 no WhatsApp',
-  'Agendamento Direto no Cal.com',
-  'Aumento na Velocidade de Resposta',
-  'Treinado com Dados Reais da Sua Empresa',
-  'Barbearias, Clínicas & Imobiliárias',
-  'Comunicação Transparente'
-]
 
 let revealObserver: IntersectionObserver | null = null
 

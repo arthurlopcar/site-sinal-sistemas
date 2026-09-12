@@ -3,14 +3,14 @@
     <div class="mx-auto max-w-7xl px-5 sm:px-8">
       <div class="grid gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
         <div data-reveal>
-          <SectionBadge texto="a sinal sistemas" index="01" />
+          <SectionBadge texto="a sinal sistemas" />
 
           <h2 class="mt-6 text-4xl font-extrabold leading-[0.95] tracking-[-0.04em] sm:text-6xl text-white">
             Solução simples e honesta para o <span class="text-sinal-cyan">atendimento do seu negócio</span>.
           </h2>
 
           <p class="mt-6 text-xl leading-relaxed text-sinal-muted font-normal sm:text-2xl">
-            A Sinal Sistemas foi criada por Arthur Carrijo para ajudar pequenos negócios locais no Brasil a nunca mais perderem clientes potenciais no WhatsApp por falta de resposta rápida.
+            A Sinal Sistemas foi criada para ajudar pequenos negócios locais no Brasil a nunca mais perderem clientes potenciais no WhatsApp por falta de resposta rápida.
           </p>
 
           <p class="mt-5 text-lg leading-relaxed text-sinal-muted">

@@ -2,7 +2,7 @@
   <section id="resultados" class="scroll-mt-24 border-b border-white/10 py-20 sm:py-28">
     <div class="mx-auto max-w-7xl px-5 sm:px-8">
       <div data-reveal class="text-center max-w-4xl mx-auto">
-        <SectionBadge texto="garantias & transparência" index="05" />
+        <SectionBadge texto="garantias & transparência" />
 
         <h2 class="mt-6 text-4xl sm:text-6xl font-extrabold leading-[0.95] tracking-[-0.04em] text-white">
           O que a Sinal Sistemas <span class="text-sinal-lime">garante</span> para seu negócio.

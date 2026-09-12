@@ -3,7 +3,6 @@
     <div class="mx-auto max-w-7xl px-5 sm:px-8">
       <div data-reveal class="mb-14">
         <div class="inline-flex items-center gap-2 font-mono text-xs sm:text-sm uppercase tracking-[0.24em] text-sinal-olive font-bold">
-          <span class="text-sinal-ink">[ 02 ]</span>
           <span>/ nossos produtos e serviços</span>
         </div>
 
@@ -18,14 +17,13 @@
 
       <div class="grid gap-8 lg:grid-cols-3">
         <article
-          v-for="(solucao, index) in solucoes"
+          v-for="solucao in solucoes"
           :key="solucao.title"
           data-reveal
           class="rounded-2xl border-2 border-sinal-ink/20 bg-white p-8 sm:p-10 shadow-xl flex flex-col justify-between transition duration-300 hover:border-sinal-ink hover:shadow-2xl"
         >
           <div>
-            <div class="flex items-center justify-between font-mono text-xs sm:text-sm font-bold text-sinal-olive">
-              <span class="text-sinal-ink">[ 0{{ index + 1 }} ]</span>
+            <div class="flex items-center justify-end font-mono text-xs sm:text-sm font-bold text-sinal-olive">
               <span class="uppercase tracking-widest text-xs rounded bg-sinal-ink/10 px-3 py-1 text-sinal-ink">{{ solucao.badge }}</span>
             </div>
 
@@ -85,7 +83,8 @@ const solucoes = [
     features: [
       'Atendimento 24 horas por dia, 7 dias por semana',
       'Qualifica contatos e responde dúvidas frequentes',
-      'Agendamento automático via Cal.com por profissional'
+      'Agendamento automático via Cal.com por profissional',
+      'Respostas alinhadas ao tom de voz do seu negócio'
     ]
   },
   {

@@ -17,7 +17,7 @@
 
         <div data-reveal class="mt-10 flex flex-wrap items-center gap-5">
           <ActionButton
-            texto="Falar com Arthur no WhatsApp"
+            texto="Falar no WhatsApp"
             :href="whatsappLink"
             is-external
             variant="primary"
