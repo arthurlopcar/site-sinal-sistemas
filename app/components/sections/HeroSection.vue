@@ -1,5 +1,5 @@
 <template>
-  <section id="inicio" class="relative overflow-hidden border-b border-white/10 pt-28 sm:pt-36 scroll-mt-24">
+  <section id="inicio" class="relative overflow-hidden border-b border-white/10 pt-24 sm:pt-28 scroll-mt-24">
     <!-- Grid overlay background -->
     <div class="grid-pattern absolute inset-0 -z-10 opacity-30 pointer-events-none"></div>
     <div class="absolute -top-32 -left-32 h-96 w-96 rounded-full bg-sinal-lime/10 blur-[120px] pointer-events-none"></div>
@@ -7,11 +7,7 @@
 
     <div class="mx-auto grid max-w-7xl gap-12 px-5 py-16 sm:px-8 sm:py-24 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:py-32">
       <div>
-        <div data-reveal>
-          <SectionBadge texto="automação 24h & sites para negócios locais" index="01" />
-        </div>
-
-        <h1 data-reveal class="mt-7 max-w-4xl text-5xl font-extrabold leading-[0.93] tracking-[-0.05em] sm:text-7xl lg:text-8xl text-white">
+        <h1 data-reveal class="max-w-4xl text-5xl font-extrabold leading-[0.93] tracking-[-0.05em] sm:text-7xl lg:text-8xl text-white">
           Nunca mais perca um cliente por <span class="text-sinal-lime">demora no atendimento</span>.
         </h1>
 
@@ -96,7 +92,6 @@
 
 <script setup lang="ts">
 import ActionButton from '../ui/ActionButton.vue'
-import SectionBadge from '../ui/SectionBadge.vue'
 
 defineProps<{
   whatsappLink: string

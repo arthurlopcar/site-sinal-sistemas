@@ -85,8 +85,7 @@ const solucoes = [
     features: [
       'Atendimento 24 horas por dia, 7 dias por semana',
       'Qualifica contatos e responde dúvidas frequentes',
-      'Agendamento automático via Cal.com por profissional',
-      'Reengajamento de clientes que somem na conversa'
+      'Agendamento automático via Cal.com por profissional'
     ]
   },
   {
